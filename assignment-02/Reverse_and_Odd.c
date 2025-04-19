@@ -11,13 +11,11 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-   for(int i = n;  i > 0; i--) {
-        if(i % 2 == 0){
-            printf("%d ", i);
-        }else if(i % 2 != 0){
-            printf("%d", i);
+    for(int i = n - 1; i > 0; i--) {
+          if(i % 2 != 0){  
+            printf(" %d %d \n", arr[i], i);
         }
-   }
+    }
     
     return 0;
 }
