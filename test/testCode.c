@@ -2,11 +2,11 @@
 
 int main() {
     
-    int arr[8] = {4, 7, 8, 6, 5, 9, 4, 6, 7};
+    char str[20];
+    
+    scanf("%c", &str);
 
-    for(int i = 0; i < 8; i++){
-        
-    }
+    printf("%s", str);
 
     return 0;
 }
