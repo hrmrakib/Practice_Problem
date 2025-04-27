@@ -9,7 +9,7 @@ int main() {
     int i = 0;
     while (true)
     {
-        if (a[i] == b[i]) {
+        if (a[i] == '\0' && b[i] == '\0') {
             printf("The strings are equal\n");
             break;
         } else if(a[i] == '\0') {
@@ -21,11 +21,12 @@ int main() {
         } else if (a[i] < b[i]) {
             printf("A is smaller than B\n");
             break;
-        } else {
+        } else if (a[i] > b[i]) {
             printf("A is greater than B\n");
             break;
+        }else if(a[i] == b[i]) {
+            i++;
         }
-        i++;
         
     }
     
