@@ -1,12 +1,13 @@
 #include <stdio.h>
 
-int main() {
-    
-    char str[20];
-    
-    scanf("%c", &str);
+int main()
+{
 
-    printf("%s", str);
+    int n;
+
+    // scanf
+
+    printf("%d", 5 % 4);
 
     return 0;
 }
