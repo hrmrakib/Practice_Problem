@@ -2,6 +2,7 @@
 
 int isPrime()
 {
+    
 }
 
 int main()

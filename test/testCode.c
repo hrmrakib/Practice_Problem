@@ -1,13 +1,22 @@
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
+    char a[101];
 
-    int n;
+    scanf("%s", &a);
 
-    // scanf
+    int len = strlen(a);
 
-    printf("%d", 5 % 4);
+    char b[101];
+
+    for (int i = len - 1; i >= 0; i--)
+    {
+        b[i] = a[i];
+    }
+
+    printf("%s", b);
 
     return 0;
 }
