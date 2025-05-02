@@ -9,14 +9,14 @@ int main()
 
     int len = strlen(a);
 
-    char b[101];
-
-    for (int i = len - 1; i >= 0; i--)
+    if (a[0] == a[len - 1])
     {
-        b[i] = a[i];
+        printf("Yes %d\n", a[len - 1]);
     }
-
-    printf("%s", b);
+    else
+    {
+        printf("No");
+    }
 
     return 0;
 }
