@@ -3,19 +3,11 @@
 
 int main()
 {
-    char a[101];
-
-    scanf("%s", &a);
-
-    int len = strlen(a);
-
-    if (a[0] == a[len - 1])
-    {
-        printf("Yes %d\n", a[len - 1]);
-    }
-    else
-    {
-        printf("No");
+    for(int i = 1; i <= 5; i++) {
+        for(int j = 1; j <= i; j++) {
+            printf("*");
+        }
+        printf("\n");
     }
 
     return 0;
