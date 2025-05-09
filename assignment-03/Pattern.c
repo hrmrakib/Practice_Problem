@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-int main() {
-    
-    int n; 
+int main()
+{
+
+    int n;
     scanf("%d", &n);
 
     int star = 1;
@@ -10,38 +11,50 @@ int main() {
 
     int row = 1;
 
-    for(int i = 1; i <= n; i++, row++) {
-        for(int s = 1; s <= space; s++) {
-            printf(" ");
+    for (int i = 1; i <= n; i++, row++)
+    {
+        for (int s = 1; s <= space; s++)
+        {
+            printf(" "); 
         }
-        for(int j = 1; j <= star; j++) {
-            if(row % 2 == 0) {
+        for (int j = 1; j <= star; j++)
+        {
+            if (row % 2 == 0)
+            {
                 printf("-");
-            }else{
+            }
+            else
+            {
                 printf("#");
             }
         }
         printf("\n");
-        star+=2;
+        star += 2;
         space--;
     }
-    
+
     star = star - 4;
     space = 1;
 
-    for(int i = 1; i <= n - 1; i++, row++) {
-        for(int s = 1; s <= space; s++) {
+    for (int i = 1; i <= n - 1; i++, row++)
+    {
+        for (int s = 1; s <= space; s++)
+        {
             printf(" ");
         }
-        for(int j = 1; j <= star; j++) {
-            if(row % 2 == 0) {
+        for (int j = 1; j <= star; j++)
+        {
+            if (row % 2 == 0)
+            {
                 printf("-");
-            }else{
+            }
+            else
+            {
                 printf("#");
             }
         }
         printf("\n");
-        star-=2;
+        star -= 2;
         space++;
     }
 
